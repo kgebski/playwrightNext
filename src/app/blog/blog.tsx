@@ -1,9 +1,9 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import Navbar from "./navbar";
-import "./styles.css";
+import styles from "../page.module.css";
+import Navbar from "../navbar";
+import "../styles.css";
 
-export default function Home() {
+export default function Blog() {
   return (
     <div className={styles.page}>
       <Navbar />
