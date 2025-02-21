@@ -1,12 +1,10 @@
 import Image from "next/image";
 import styles from "../page.module.css";
-import Navbar from "../navbar";
 import "../styles.css";
 
 export default function Blog() {
   return (
     <div className={styles.page}>
-      <Navbar />
       <main className={styles.main}>
         <Image
           className={styles.logo}
@@ -16,6 +14,7 @@ export default function Blog() {
           height={38}
           priority
         />
+        <h1>Blog</h1>
         <ol>
           <li>
             Get started by editing <code>src/app/blog/page.tsx</code>.

@@ -1,9 +1,8 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import "./styles.css";
+import styles from "../page.module.css";
+import "../styles.css";
 
-
-export default function Home() {
+export default function Blog() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -15,7 +14,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <h1>Homepage</h1>
+        <h1>Examples</h1>
         <ol>
           <li>
             Get started by editing <code>src/app/blog/page.tsx</code>.
