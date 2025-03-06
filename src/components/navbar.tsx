@@ -1,7 +1,7 @@
 import Link from 'next/link';
 export default function Navbar() {
     return <nav className="nav">
-        <Link href="/" className="site-title">Site Name</Link>
+        <Link href="/" className="site-title">Test Site</Link>
         <ul>
             <li>
                 <Link href={{ pathname: '/docs' }}>Docs</Link>

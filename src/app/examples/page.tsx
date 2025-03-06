@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../page.module.css";
 import "../styles.css";
 
-export default function Blog() {
+export default function Examples() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
