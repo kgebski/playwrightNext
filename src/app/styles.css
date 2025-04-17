@@ -32,7 +32,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: lightblue;
   text-decoration: none;
 }
 
@@ -40,6 +40,19 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+ol {
+  padding-top:25px;
+}
+
+p {
+  font-size: medium;
+  max-width: 50%;
+}
+
+.blogp p{
+  width:50%;
 }
 
 .nav {
@@ -57,6 +70,7 @@ a {
   font-size: 1.75rem;
 
 }
+
 
 nav ul {
   padding: 0;
