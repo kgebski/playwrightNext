@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+      <div className={styles.contain}>
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -46,6 +47,7 @@ export default function Home() {
           >
             Read our docs
           </a>
+        </div>
         </div>
       </main>
       <footer className={styles.footer}>
