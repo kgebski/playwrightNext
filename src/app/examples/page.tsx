@@ -1,13 +1,13 @@
 import Image from "next/image";
-import styles from "../page.module.css";
-import "../styles.css";
+import "../styles/globals.scss";
+import "../styles/styles.scss";
 
 export default function Examples() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <div className="globalspage">
+      <main className="globalsmain">
         <Image
-          className={styles.logo}
+          className="globalslogo"
           src="/next.svg"
           alt="Next.js logo"
           width={180}
@@ -17,12 +17,12 @@ export default function Examples() {
         <h1>Examples</h1>
         <ul>
           <li>
-            <code> div className="flex justify-center"</code>
+            <code>TEST CODE</code>
           </li>
-          <li><code>document.getElementById("demo").innerHTML</code></li>
+          <li><code>BECAUSE CODE WAS BREAKING THIS</code></li>
         </ul>
       </main>
-      <footer className={styles.footer}>
+      <footer className="globalsfooter">
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           target="_blank"

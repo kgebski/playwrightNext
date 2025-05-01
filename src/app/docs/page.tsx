@@ -1,13 +1,13 @@
 import Image from "next/image";
-import styles from "../page.module.css";
-import "../styles.css";
+import "../styles/globals.scss";
+import "../styles/styles.scss";
 
 export default function Docs() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <div className="page">
+      <main className="main">
         <Image
-          className={styles.logo}
+          className="logo"
           src="/next.svg"
           alt="Next.js logo"
           width={180}
@@ -35,7 +35,7 @@ export default function Docs() {
          
         </div>
       </main>
-      <footer className={styles.footer}>
+      <footer className="globalsfooter">
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           target="_blank"

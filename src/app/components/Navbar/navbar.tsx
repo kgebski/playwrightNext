@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import "./navbar.module.scss";
+
+
 export default function Navbar() {
     return <nav className="nav">
         <Link href="/" className="site-title" data-testid="home-logo">Test Site</Link>
