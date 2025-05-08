@@ -28,8 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navbar />
-         {children}
+        <div className="wrapper">
+          <Navbar />
+          {children}
+        //INSERT FOOTER OBJECT HERE
+        </div>
       </body>
     </html>
   );
