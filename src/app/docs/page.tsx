@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import "../styles/globals.scss";
 import "../styles/styles.scss";
+
+export const metadata: Metadata = {
+  title: "Docs",
+  description: "Documentation",
+};
 
 export default function Docs() {
   return (

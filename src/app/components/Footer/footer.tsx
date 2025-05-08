@@ -1,34 +1,9 @@
-import type { Metadata } from "next";
 import Image from "next/image";
-import "../styles/globals.scss";
-import "../styles/styles.scss";
+import styles from "./footer.module.scss";
 
-export const metadata: Metadata = {
-  title: "Examples",
-  description: "Examples",
-};
-
-export default function Examples() {
-  return (
-    <div className="globalspage">
-      <main className="globalsmain">
-        <Image
-          className="globalslogo"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <h1>Examples</h1>
-        <ul>
-          <li>
-            <code>TEST CODE</code>
-          </li>
-          <li><code>BECAUSE CODE WAS BREAKING THIS</code></li>
-        </ul>
-      </main>
-      <footer className="globalsfooter">
+export default function Footer() {
+  return <footer className={styles.footer}>
+    <div className={styles.container}>
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           target="_blank"
@@ -71,7 +46,6 @@ export default function Examples() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
     </div>
-  );
+  </footer>
 }
