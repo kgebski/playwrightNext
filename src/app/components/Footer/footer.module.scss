@@ -1,27 +1,25 @@
-.container {
-  background-color:blue;
-}
-
 .footer {
-    //grid-row-start: 3;
     display: flex;
     gap: 24px;
     justify-content:center;
     flex-direction: row;
-    background-color: red;
+    height:50px;
+    background-color:#2d2d2d;
+    align-items: center;
+    
+    
   }
-  
+  //Should I make an a into a footer__a? Would that actually be easier for us? 
   .footer a {
     display: flex;
-    align-items: center;
-    flex-direction:row;
     gap: 8px;
+    color: white;
   }
   
   .footer img {
     flex-shrink: 0;
-  }
-
+    color:white;   //why no white? 
+  } 
 
   /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -41,3 +39,10 @@
   }
 }
 
+@media (max-width: 600px) {
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

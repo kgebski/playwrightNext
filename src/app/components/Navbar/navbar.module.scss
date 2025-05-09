@@ -10,17 +10,23 @@
   
   .nav__logo  {
     filter: invert(100%);
+    display:flex;
+    justify-content: center;
   }
+
 //I couldn't get &__ul to work when trying to shorthand the class names. Why? 
   .nav__ul {
     padding: 0;
     margin: 0;
     list-style: none;
     display:flex;
+    justify-content: space-around;
     gap: 1rem
+    //justify-content: center;
+    
   }
-
-  .nav__a {
+  //Changing this to .nav__a broke the other nav tex colors
+  a {
     color: inherit;
     text-decoration: none;
   }
