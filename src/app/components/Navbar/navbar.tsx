@@ -16,7 +16,7 @@ export default function Navbar() {
         </Link>
         <ul className={styles.nav__ul}>
             <li>
-                <Link href={{ pathname: '/docs' }} data-testid="nav-docs" className={styles.nav__a}>Docs</Link>
+                <Link href={{ pathname: '/docs' }} data-testid="nav-docs">Docs</Link>
             </li>
             <li>
                 <Link href="/examples" data-testid="nav-examples">Examples</Link>

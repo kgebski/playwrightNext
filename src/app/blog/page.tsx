@@ -1,6 +1,5 @@
 import Image from "next/image";
-import "../styles/globals.scss";
-import "../styles/styles.scss";
+import styles from './blog.module.scss'
 
 export default function Blog() {
   return (
@@ -16,24 +15,15 @@ export default function Blog() {
         />
         <h1>Blog</h1>
         <Image
-              className="portrait"
+              className="logo"
               src="/johnc.jpg"
               alt="portrait"
               width={300}
               height={200}
             />
-        <div className="blogp">
-        <p>Had a full day as usual
-went on a day trip because I felt recognized
-took a walk to nowhere in particular while exercising
-someone yelled at me again
-went on a holiday while someone got angry at me
-missed someone to getting help on something from someone
-went to a class for (some character)
-hurt myself as usual
-had an adventure which led to big responsibility is weighing on me
-saw art as usual</p>
-        </div>
+        <p className={styles.blogp}>Had a full day as usual
+went on a day trip because I felt spicy,
+took a walk to nowhere in particular. I fell down when I was walking. Thats okay, stuff happens. I got back up and bought a hot dog from a vendor. I asked if he had beer but he only had bud light so I left. </p>
       </main>
     </div>
   );

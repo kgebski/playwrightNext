@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import "../styles/globals.scss";
-import "../styles/styles.scss";
+//import styles from './examples.module.scss'
 
 export const metadata: Metadata = {
   title: "Examples",
@@ -11,6 +10,9 @@ export const metadata: Metadata = {
 export default function Examples() {
   return (
     <div className="page">
+      {/* <div className={styles.sidebar}>
+        <p>FILLER</p>
+      </div> */}
       <main className="main">
         <Image
           className="logo"
@@ -20,7 +22,7 @@ export default function Examples() {
           height={38}
           priority
         />
-        <h1>Examples</h1>
+        <h1>Avoiding Grid 101</h1>
         <ul>
           <li>
             <code>TEST CODE</code>
