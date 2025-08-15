@@ -1,0 +1,102 @@
+.blogp {
+  width:50%;
+}
+@media (max-width: 600px) {
+ .blogp {
+  width:90%;
+}
+}
+
+.mainV2 {
+  display: grid;
+  width:100%;
+  grid-template-columns: repeat(3, 1fr);
+  //grid-template-rows: (4, auto);
+  //grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "ho ho ho"
+    "hd hd hd"
+    "t1 t2 t3"
+    "t4 t5 t6";
+  //align-content:start;
+  min-height:auto;
+  overflow:auto;
+    
+  
+}
+
+.subnavV2{
+    color:yellow;
+    
+}
+
+.subnav_dateV2{
+  color:rgb(235, 234, 234);
+}
+
+.subnav_titleV2{
+  color:rgb(217, 216, 216);
+  margin-right:20px;
+}
+
+.hero {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: rgb(77, 77, 77);
+  align-content: end;
+  grid-template-columns: repeat(auto-fill, 200px);
+  height:500px;
+ 
+}
+
+.heading {
+  grid-row: span 3;
+  grid-column: span 1;
+  grid-area: hd;
+  grid-template-columns: repeat(auto-fill, 200px);
+  background-color:rgb(129, 129, 129);
+  padding:20px;
+}
+
+.tile1 {
+    grid-area: t1;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(176, 176, 176);
+    width:100%;
+    padding:20px;
+}
+
+.tile2 {
+    grid-area: t2;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(148, 147, 147);
+    padding:20px;
+}
+
+.tile3 {
+    grid-area: t3;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(180, 179, 179);
+    padding:20px;
+}
+
+.tile4 {
+    grid-area: t4;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(176, 176, 176);
+    width:100%;
+    padding:20px;
+}
+
+.tile5 {
+    grid-area: t5;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(148, 147, 147);
+    padding:20px;
+}
+
+.tile6 {
+    grid-area: t6;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(180, 179, 179);
+    padding:20px;
+}

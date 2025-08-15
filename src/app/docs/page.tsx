@@ -22,7 +22,7 @@ export default function Docs() {
         />
         <h1>Docs</h1>
         <div>
-          <h3>Up to date documentation on best Next.js practices:</h3>
+          <h3>FLEX Up to date documentation on best Next.js practices:</h3>
           <ol>
             <li>
             <a

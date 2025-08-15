@@ -26,6 +26,7 @@ return (
           Get started by editing <code>src/app/page.tsx</code>.
         </li>
         <li>Save and see your changes instantly.</li>
+        <li>Flex</li>
       </ol>
 
       <div className="ctas">

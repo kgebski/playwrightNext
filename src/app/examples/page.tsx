@@ -28,6 +28,7 @@ export default function Examples() {
             <code>TEST CODE</code>
           </li>
           <li><code>BECAUSE CODE WAS BREAKING THIS</code></li>
+          <li>Flex</li>
         </ul>
       </main>
     </div>
