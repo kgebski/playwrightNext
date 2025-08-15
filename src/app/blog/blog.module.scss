@@ -1,26 +1,120 @@
 .blogp {
-  width:50%;
+  
 }
+
+.tilep{
+
+}
+
 @media (max-width: 600px) {
  .blogp {
   width:90%;
 }
 }
 
-.subnav{
-    padding: 10px;
-    margin: 0;
-    list-style:none;
-    display:flex;
-    justify-content: space-around;
-    gap: 1rem;
+.mainV2 {
+  display: grid;
+  width:100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4;
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-areas:
+    "ho ho ho"
+    "hd hd hd"
+    "t1 t2 t3"
+    "t4 t5 t6";
+  //align-content:start;
+  min-height:auto;
+  overflow:auto;
+  align-content:start;
+    
+  
 }
 
-.subnav_date{
-  color:rgb(145, 145, 145);
+.subnavV2{
+    color:yellow;
+    
 }
 
-.subnav_title{
-  color:rgb(195, 195, 195);
+.card__title{
+  color:rgb(235, 234, 234);
+  display:block;
+}
+
+.subnav_titleV2{
+  color:rgb(217, 216, 216);
   margin-right:20px;
+  display:block;
+}
+
+.hero {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: rgb(77, 77, 77);
+  align-content:center;
+  grid-template-columns: repeat(auto-fill, 200px);
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  
+ 
+}
+
+.heading {
+  grid-row: span 3;
+  grid-column: span 1;
+  grid-area: hd;
+  background-color:rgb(129, 129, 129);
+  padding:20px;
+  align-self: center;
+}
+
+.tile1 {
+    grid-area: t1;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(176, 176, 176);
+    width:100%;
+    padding:20px;
+    align-self:start;
+}
+
+.tile2 {
+    grid-area: t2;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(148, 147, 147);
+    padding:20px;
+    align-self:start;
+}
+
+.tile3 {
+    grid-area: t3;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(180, 179, 179);
+    padding:20px;
+    align-self:start;
+}
+
+.tile4 {
+    grid-area: t4;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(176, 176, 176);
+    width:100%;
+    padding:20px;
+    align-self:start;
+}
+
+.tile5 {
+    grid-area: t5;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(148, 147, 147);
+    padding:20px;
+    align-self:start;
+}
+
+
+.tile6 {
+    grid-area: t6;
+    grid-template-columns: repeat(auto-fill, 200px);
+    //background-color: rgb(180, 179, 179);
+    padding:20px;
+    align-self:start;
 }

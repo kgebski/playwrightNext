@@ -1,10 +1,9 @@
 import Image from "next/image";
-import styles from './blogV2.module.scss';
+import styles from '../../blogV2/blogV2.module.scss';
 import Link from 'next/link';
 
 export default function Blog() {
   return (
-    <div className="page">
       <main className={styles.mainV2}>
         <div className={styles.hero}>
           <Image
@@ -81,6 +80,5 @@ export default function Blog() {
           <span className={styles.subnav_dateV2}>08.02.25</span> <span className={styles.subnav_titleV2}>Hiking Blog</span></Link>
         </div>
       </main>
-    </div>
   );
 }
