@@ -6,15 +6,14 @@ export default function Blog() {
   return (
       <main className={styles.mainV2}>
         <div className={styles.hero}>
-          <Image
+          <Image className={styles.blogimg}
                         src="/johnc.jpg"
                         alt="portrait"
                         width={300}
                         height={200}
                       />
-          <h1>About the author</h1>
-          <h2>Steve Brule</h2>
-          <p>Steve loves traveling the country to report on the news ya dingus! </p>
+          <h1>Steve Brule</h1>
+          <p>Follow along with Steve on his hiking adventures!</p>
         </div>
         <div className={styles.heading}>
           <h2>TRAVEL BLOG | RECENT POSTS</h2>

@@ -1,8 +1,5 @@
-
-@media (max-width: 600px) {
- .blogp {
-  width:90%;
-}
+.blogimg{
+  clip-path: circle();
 }
 
 .mainV2 {
@@ -20,20 +17,19 @@
   min-height:auto;
   overflow:auto;
   align-content:start;
-    
-  
+  margin:40px;
 }
 
 .subnavV2{
-    color:yellow;
-    
+    color:yellow;    
 }
 
 .card__title{
   color:rgb(235, 234, 234);
   display:block;
-  background-color: rgb(61, 61, 61);
-  padding: 15px 0px 20px 10px;
+  //background-color: rgb(61, 61, 61);
+  padding: 10px 0px 10px 0px;
+  font-size:14px;
 }
 
 .subnav_titleV2{
@@ -45,14 +41,15 @@
 
 .hero {
   grid-area: 1 / 1 / 2 / 4;
-  background-color: rgb(77, 77, 77);
-  align-content:center;
-  grid-template-columns: repeat(auto-fill, 200px);
+  //background-color: rgb(77, 77, 77);
+  align-items: center;
+  //grid-template-columns: repeat(auto-fill, 200px);
   height:auto;
   display:flex;
   flex-direction:column;
-  
- 
+  padding: 40px 0px 40px 0px;
+
+
 }
 
 .heading {
@@ -60,9 +57,13 @@
   grid-column: span 1;
   grid-area: hd;
   //background-color:rgb(129, 129, 129);
-  padding:20px;
+  padding:50px 0px 20px 30px;
   align-self: center;
 }
+
+.tile_container {
+      display: grid;
+    }
 
 .tile1 {
     grid-area: t1;
@@ -113,4 +114,12 @@
     //background-color: rgb(180, 179, 179);
     padding:20px;
     align-self:start;
+}
+
+@media (max-width: 600px) {
+
+
+  .blogp {
+  width:90%;
+}
 }
